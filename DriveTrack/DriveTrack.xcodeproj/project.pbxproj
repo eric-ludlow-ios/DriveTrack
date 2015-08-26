@@ -81,13 +81,13 @@
 		0FFB0A351B8E6696002696E9 /* DriveTrack */ = {
 			isa = PBXGroup;
 			children = (
+				0FFB0A451B8E6696002696E9 /* LaunchScreen.xib */,
 				0FFB0A3A1B8E6696002696E9 /* AppDelegate.h */,
 				0FFB0A3B1B8E6696002696E9 /* AppDelegate.m */,
+				0FFB0A401B8E6696002696E9 /* Main.storyboard */,
 				0FFB0A3D1B8E6696002696E9 /* ViewController.h */,
 				0FFB0A3E1B8E6696002696E9 /* ViewController.m */,
-				0FFB0A401B8E6696002696E9 /* Main.storyboard */,
 				0FFB0A431B8E6696002696E9 /* Images.xcassets */,
-				0FFB0A451B8E6696002696E9 /* LaunchScreen.xib */,
 				0FFB0A361B8E6696002696E9 /* Supporting Files */,
 			);
 			path = DriveTrack;
