@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+@import UIKit;
 
-@interface TripsHistoryViewTableViewDataSource : NSObject
+@interface TripsHistoryViewTableViewDataSource : NSObject <UITableViewDataSource>
 
 @end

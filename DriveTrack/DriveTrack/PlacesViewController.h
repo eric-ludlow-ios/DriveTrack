@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  PlacesViewController.h
 //  DriveTrack
 //
 //  Created by Rutan on 8/26/15.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface PlacesViewController : UIViewController
 
 
 @end

@@ -10,4 +10,6 @@
 
 @interface PlacesDetailViewController : UIViewController
 
+@property (nonatomic)BOOL isNewPlace;
+
 @end

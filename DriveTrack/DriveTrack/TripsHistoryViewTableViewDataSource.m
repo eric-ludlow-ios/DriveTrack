@@ -7,7 +7,22 @@
 //
 
 #import "TripsHistoryViewTableViewDataSource.h"
+#import "TripsHistoryViewTableViewCell.h"
 
 @implementation TripsHistoryViewTableViewDataSource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    
+    return 1;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    TripsHistoryViewTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"tripsHistoryListCell"];
+    
+    cell.titleLabel.text = @"This is a past trip.";
+    
+    return cell;
+}
 
 @end

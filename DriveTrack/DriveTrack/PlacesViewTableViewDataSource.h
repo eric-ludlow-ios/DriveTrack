@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+@import UIKit;
 
-@interface PlacesViewTableViewDataSource : NSObject
+@interface PlacesViewTableViewDataSource : NSObject <UITableViewDataSource>
 
 @end

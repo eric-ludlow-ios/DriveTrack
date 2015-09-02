@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F1316BC1B8F68FD00615EDB /* PlacesDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F1316BB1B8F68FD00615EDB /* PlacesDetailViewController.m */; };
+		0F1316BF1B8F6A3600615EDB /* PlacesViewTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F1316BE1B8F6A3600615EDB /* PlacesViewTableViewDataSource.m */; };
+		0FA244C41B95077B00DD8E2A /* TripsHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA244C31B95077B00DD8E2A /* TripsHistoryViewController.m */; };
+		0FA244C81B9507D200DD8E2A /* TripsHistoryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA244C71B9507D200DD8E2A /* TripsHistoryDetailViewController.m */; };
+		0FA244CB1B9507FF00DD8E2A /* TripsHistoryViewTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA244CA1B9507FF00DD8E2A /* TripsHistoryViewTableViewDataSource.m */; };
+		0FA244CE1B950C0C00DD8E2A /* TripsHistoryViewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA244CD1B950C0C00DD8E2A /* TripsHistoryViewTableViewCell.m */; };
 		0FFB0A391B8E6696002696E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FFB0A381B8E6696002696E9 /* main.m */; };
 		0FFB0A3C1B8E6696002696E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FFB0A3B1B8E6696002696E9 /* AppDelegate.m */; };
-		0FFB0A3F1B8E6696002696E9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FFB0A3E1B8E6696002696E9 /* ViewController.m */; };
+		0FFB0A3F1B8E6696002696E9 /* PlacesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FFB0A3E1B8E6696002696E9 /* PlacesViewController.m */; };
 		0FFB0A421B8E6696002696E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FFB0A401B8E6696002696E9 /* Main.storyboard */; };
 		0FFB0A441B8E6696002696E9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FFB0A431B8E6696002696E9 /* Images.xcassets */; };
 		0FFB0A471B8E6696002696E9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FFB0A451B8E6696002696E9 /* LaunchScreen.xib */; };
@@ -27,13 +33,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F1316BA1B8F68FD00615EDB /* PlacesDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlacesDetailViewController.h; sourceTree = "<group>"; };
+		0F1316BB1B8F68FD00615EDB /* PlacesDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlacesDetailViewController.m; sourceTree = "<group>"; };
+		0F1316BD1B8F6A3600615EDB /* PlacesViewTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlacesViewTableViewDataSource.h; sourceTree = "<group>"; };
+		0F1316BE1B8F6A3600615EDB /* PlacesViewTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlacesViewTableViewDataSource.m; sourceTree = "<group>"; };
+		0FA244C21B95077B00DD8E2A /* TripsHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TripsHistoryViewController.h; sourceTree = "<group>"; };
+		0FA244C31B95077B00DD8E2A /* TripsHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TripsHistoryViewController.m; sourceTree = "<group>"; };
+		0FA244C61B9507D200DD8E2A /* TripsHistoryDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TripsHistoryDetailViewController.h; sourceTree = "<group>"; };
+		0FA244C71B9507D200DD8E2A /* TripsHistoryDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TripsHistoryDetailViewController.m; sourceTree = "<group>"; };
+		0FA244C91B9507FF00DD8E2A /* TripsHistoryViewTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TripsHistoryViewTableViewDataSource.h; sourceTree = "<group>"; };
+		0FA244CA1B9507FF00DD8E2A /* TripsHistoryViewTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TripsHistoryViewTableViewDataSource.m; sourceTree = "<group>"; };
+		0FA244CC1B950C0C00DD8E2A /* TripsHistoryViewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TripsHistoryViewTableViewCell.h; sourceTree = "<group>"; };
+		0FA244CD1B950C0C00DD8E2A /* TripsHistoryViewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TripsHistoryViewTableViewCell.m; sourceTree = "<group>"; };
 		0FFB0A331B8E6696002696E9 /* DriveTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DriveTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FFB0A371B8E6696002696E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FFB0A381B8E6696002696E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0FFB0A3A1B8E6696002696E9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0FFB0A3B1B8E6696002696E9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0FFB0A3D1B8E6696002696E9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0FFB0A3E1B8E6696002696E9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0FFB0A3D1B8E6696002696E9 /* PlacesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlacesViewController.h; sourceTree = "<group>"; };
+		0FFB0A3E1B8E6696002696E9 /* PlacesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlacesViewController.m; sourceTree = "<group>"; };
 		0FFB0A411B8E6696002696E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0FFB0A431B8E6696002696E9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0FFB0A461B8E6696002696E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -60,6 +78,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F1316B91B8F68D600615EDB /* Places */ = {
+			isa = PBXGroup;
+			children = (
+				0FFB0A3D1B8E6696002696E9 /* PlacesViewController.h */,
+				0FFB0A3E1B8E6696002696E9 /* PlacesViewController.m */,
+				0F1316BD1B8F6A3600615EDB /* PlacesViewTableViewDataSource.h */,
+				0F1316BE1B8F6A3600615EDB /* PlacesViewTableViewDataSource.m */,
+				0F1316BA1B8F68FD00615EDB /* PlacesDetailViewController.h */,
+				0F1316BB1B8F68FD00615EDB /* PlacesDetailViewController.m */,
+			);
+			name = Places;
+			sourceTree = "<group>";
+		};
+		0FA244C51B95078700DD8E2A /* Trips History */ = {
+			isa = PBXGroup;
+			children = (
+				0FA244C21B95077B00DD8E2A /* TripsHistoryViewController.h */,
+				0FA244C31B95077B00DD8E2A /* TripsHistoryViewController.m */,
+				0FA244C91B9507FF00DD8E2A /* TripsHistoryViewTableViewDataSource.h */,
+				0FA244CA1B9507FF00DD8E2A /* TripsHistoryViewTableViewDataSource.m */,
+				0FA244CC1B950C0C00DD8E2A /* TripsHistoryViewTableViewCell.h */,
+				0FA244CD1B950C0C00DD8E2A /* TripsHistoryViewTableViewCell.m */,
+				0FA244C61B9507D200DD8E2A /* TripsHistoryDetailViewController.h */,
+				0FA244C71B9507D200DD8E2A /* TripsHistoryDetailViewController.m */,
+			);
+			name = "Trips History";
+			sourceTree = "<group>";
+		};
 		0FFB0A2A1B8E6696002696E9 = {
 			isa = PBXGroup;
 			children = (
@@ -85,8 +131,8 @@
 				0FFB0A3A1B8E6696002696E9 /* AppDelegate.h */,
 				0FFB0A3B1B8E6696002696E9 /* AppDelegate.m */,
 				0FFB0A401B8E6696002696E9 /* Main.storyboard */,
-				0FFB0A3D1B8E6696002696E9 /* ViewController.h */,
-				0FFB0A3E1B8E6696002696E9 /* ViewController.m */,
+				0FA244C51B95078700DD8E2A /* Trips History */,
+				0F1316B91B8F68D600615EDB /* Places */,
 				0FFB0A431B8E6696002696E9 /* Images.xcassets */,
 				0FFB0A361B8E6696002696E9 /* Supporting Files */,
 			);
@@ -219,9 +265,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FFB0A3F1B8E6696002696E9 /* ViewController.m in Sources */,
+				0FA244CE1B950C0C00DD8E2A /* TripsHistoryViewTableViewCell.m in Sources */,
+				0FFB0A3F1B8E6696002696E9 /* PlacesViewController.m in Sources */,
+				0F1316BF1B8F6A3600615EDB /* PlacesViewTableViewDataSource.m in Sources */,
+				0F1316BC1B8F68FD00615EDB /* PlacesDetailViewController.m in Sources */,
 				0FFB0A3C1B8E6696002696E9 /* AppDelegate.m in Sources */,
+				0FA244C41B95077B00DD8E2A /* TripsHistoryViewController.m in Sources */,
+				0FA244CB1B9507FF00DD8E2A /* TripsHistoryViewTableViewDataSource.m in Sources */,
 				0FFB0A391B8E6696002696E9 /* main.m in Sources */,
+				0FA244C81B9507D200DD8E2A /* TripsHistoryDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +468,7 @@
 				0FFB0A581B8E6696002696E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0FFB0A591B8E6696002696E9 /* Build configuration list for PBXNativeTarget "DriveTrackTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +477,7 @@
 				0FFB0A5B1B8E6696002696E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

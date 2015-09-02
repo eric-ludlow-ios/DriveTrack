@@ -1,18 +1,19 @@
 //
-//  ViewController.m
+//  PlacesViewController.m
 //  DriveTrack
 //
 //  Created by Rutan on 8/26/15.
 //  Copyright (c) 2015 EricLudlowRadicalApplications. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "PlacesViewController.h"
+#import "PlacesDetailViewController.h"
 
-@interface ViewController ()
+@interface PlacesViewController ()
 
 @end
 
-@implementation ViewController
+@implementation PlacesViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -22,6 +23,22 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    PlacesDetailViewController *placesDetailVCon = [PlacesDetailViewController new];
+    placesDetailVCon = segue.destinationViewController;
+    
+    if ([segue.identifier isEqualToString:@"segueAddNewPlace"]) {
+        
+        placesDetailVCon.isNewPlace = YES;
+    }
+    
+    if ([segue.identifier isEqualToString:@"segueViewPlace"]) {
+        
+        placesDetailVCon.isNewPlace = NO;
+    }
 }
 
 @end
