@@ -39,8 +39,42 @@
         self.placeCityTextField.text = @"Somewhere";
         self.placeStateTextField.text = @"Utah";
         self.placeZipTextField.text = @"84???";
+        [self.placeClearDeleteButton setTitle:@"Delete" forState:UIControlStateNormal];
     }
 }
+
+- (IBAction)placeClearDeleteButtonPressed:(id)sender {
+    
+    if (self.isNewPlace) {
+        
+        //method to clear all fields
+    } else {
+        
+        [self presentDeleteConfirm];
+    }
+}
+
+- (void)presentDeleteConfirm {
+    
+    UIAlertController *deleteAlert = [UIAlertController alertControllerWithTitle:@"Pressing delete will remove this Place permanently."
+                                                                      message:@"Press 'Delete' to confirm or 'Cancel' to keep this Place."
+                                                               preferredStyle:UIAlertControllerStyleActionSheet];
+    
+    [deleteAlert addAction:[UIAlertAction actionWithTitle:@"Cancel"
+                                                    style:UIAlertActionStyleDefault
+                                                  handler:nil]];
+    
+    [deleteAlert addAction:[UIAlertAction actionWithTitle:@"Delete"
+                                                 style:UIAlertActionStyleDestructive
+                                               handler:^(UIAlertAction *action) {
+                                                   //delete Place using Model Controller
+                                               }]];
+    
+    [self.navigationController presentViewController:deleteAlert
+                                            animated:YES
+                                          completion:nil];
+}
+
 
 
 # pragma mark - Memory Warning method
