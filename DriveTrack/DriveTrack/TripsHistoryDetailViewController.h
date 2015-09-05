@@ -10,4 +10,6 @@
 
 @interface TripsHistoryDetailViewController : UIViewController
 
+@property (nonatomic)BOOL isNewTrip;
+
 @end

@@ -19,9 +19,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     TripsHistoryViewTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"tripsHistoryListCell"];
-    
-    cell.titleLabel.text = @"This is a past trip.";
-    
+        
     return cell;
 }
 

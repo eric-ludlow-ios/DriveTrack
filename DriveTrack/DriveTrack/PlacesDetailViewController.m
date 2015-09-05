@@ -56,8 +56,8 @@
 
 - (void)presentDeleteConfirm {
     
-    UIAlertController *deleteAlert = [UIAlertController alertControllerWithTitle:@"Pressing delete will remove this Place permanently."
-                                                                      message:@"Press 'Delete' to confirm or 'Cancel' to keep this Place."
+    UIAlertController *deleteAlert = [UIAlertController alertControllerWithTitle:@"Press 'Delete' to remove this Place from My Places."
+                                                                      message:@"or press 'Cancel' to keep this Place."
                                                                preferredStyle:UIAlertControllerStyleActionSheet];
     
     [deleteAlert addAction:[UIAlertAction actionWithTitle:@"Cancel"

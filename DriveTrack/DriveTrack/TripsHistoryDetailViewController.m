@@ -18,7 +18,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.title = @"A Past Trip";
+    if (self.isNewTrip) {
+        
+        self.title = @"New Trip";
+    } else {
+        
+        self.title = @"A Past Trip";
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning {
