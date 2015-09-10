@@ -513,6 +513,10 @@
                                 <state key="normal" title="Button" image="starOutline60">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="selected" image="starFilled60"/>
+                                <connections>
+                                    <action selector="favoritePlaceStarButtonPressed:" destination="eU8-Rf-xbP" eventType="touchUpInside" id="nVk-kW-3EQ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NFT-YZ-Jow">
                                 <rect key="frame" x="280" y="290" width="40" height="30"/>
@@ -764,6 +768,7 @@
         <image name="mapAndTag30" width="30" height="30"/>
         <image name="stacks30" width="30" height="30"/>
         <image name="starFilled30" width="30" height="30"/>
+        <image name="starFilled60" width="60" height="60"/>
         <image name="starOutline30" width="30" height="30"/>
         <image name="starOutline60" width="60" height="60"/>
     </resources>

@@ -38,7 +38,8 @@
         self.title = @"Place Details";
         self.placeDeleteClearBarButton.title = @"Delete";
         
-        [self.isAFavoritePlaceStarButton setImage:[UIImage imageNamed:@"starFilled60"] forState:UIControlStateNormal];
+        [self.isAFavoritePlaceStarButton setSelected:YES];
+       // [self.isAFavoritePlaceStarButton setImage:[UIImage imageNamed:@"starFilled60"] forState:UIControlStateNormal];
         self.placeNameTextField.text = @"Name of a place";
         self.placeStreetAddressTextField.text = @"1001 N. Street St.";
         self.placeCityTextField.text = @"Somewhere";
@@ -56,6 +57,18 @@
         [self presentDeleteConfirm];
     }
 }
+
+- (IBAction)favoritePlaceStarButtonPressed:(id)sender {
+    
+    if (self.isAFavoritePlaceStarButton.selected) {
+        [self.isAFavoritePlaceStarButton setSelected:NO];
+       // [self.isAFavoritePlaceStarButton setImage:[UIImage imageNamed:@"starFilled60"] forState:UIControlStateSelected];
+    } else {
+        [self.isAFavoritePlaceStarButton setSelected:YES];
+      //  [self.isAFavoritePlaceStarButton setImage:[UIImage imageNamed:@"starOutine60"] forState:UIControlStateNormal];
+    }
+}
+
 
 - (void)presentDeleteConfirm {
     
