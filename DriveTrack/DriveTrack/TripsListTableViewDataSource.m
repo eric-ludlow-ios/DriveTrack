@@ -6,10 +6,10 @@
 //  Copyright (c) 2015 EricLudlowRadicalApplications. All rights reserved.
 //
 
-#import "TripsHistoryViewTableViewDataSource.h"
-#import "TripsHistoryViewTableViewCell.h"
+#import "TripsListTableViewDataSource.h"
+#import "TripsListTableViewCell.h"
 
-@implementation TripsHistoryViewTableViewDataSource
+@implementation TripsListTableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
@@ -18,7 +18,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    TripsHistoryViewTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"tripsHistoryListCell"];
+    TripsListTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"tripsHistoryListCell"];
         
     return cell;
 }

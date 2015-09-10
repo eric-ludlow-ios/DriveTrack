@@ -1,5 +1,5 @@
 //
-//  TripsHistoryViewTableViewCell.h
+//  TripsHistoryViewController.h
 //  DriveTrack
 //
 //  Created by Rutan on 8/31/15.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TripsHistoryViewTableViewCell : UITableViewCell
+@interface TripsListViewController : UIViewController
 
 @end

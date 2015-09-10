@@ -6,9 +6,9 @@
 //  Copyright (c) 2015 EricLudlowRadicalApplications. All rights reserved.
 //
 
-#import "TripsHistoryDetailViewTableViewDataSource.h"
+#import "TripDetailTableViewDataSource.h"
 
-@implementation TripsHistoryDetailViewTableViewDataSource
+@implementation TripDetailTableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     

@@ -1,5 +1,5 @@
 //
-//  TripsHistoryViewController.h
+//  TripsHistoryDetailViewController.h
 //  DriveTrack
 //
 //  Created by Rutan on 8/31/15.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TripsHistoryViewController : UIViewController
+@interface TripDetailViewController : UIViewController
+
+@property (nonatomic)BOOL isNewTrip;
 
 @end

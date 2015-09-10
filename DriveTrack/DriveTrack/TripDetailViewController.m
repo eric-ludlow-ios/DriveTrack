@@ -6,11 +6,11 @@
 //  Copyright (c) 2015 EricLudlowRadicalApplications. All rights reserved.
 //
 
-#import "TripsHistoryDetailViewController.h"
-#import "TripsHistoryDetailViewTableViewDataSource.h"
+#import "TripDetailViewController.h"
+#import "TripDetailTableViewDataSource.h"
 //@import MapKit;
 
-@interface TripsHistoryDetailViewController ()
+@interface TripDetailViewController ()
 
 @property (weak, nonatomic) IBOutlet UITextField *tripDetailDateTextField;
 @property (weak, nonatomic) IBOutlet UILabel *tripDetailMilesLabel;
@@ -26,13 +26,13 @@
 
 @end
 
-@implementation TripsHistoryDetailViewController
+@implementation TripDetailViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    TripsHistoryDetailViewTableViewDataSource *dataSource = self.tripDetailTagsTableView.dataSource;
+    TripDetailTableViewDataSource *dataSource = self.tripDetailTagsTableView.dataSource;
     
     if (self.isNewTrip) {
         

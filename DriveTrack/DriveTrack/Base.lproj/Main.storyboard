@@ -8,7 +8,7 @@
         <!--Trips History View Controller-->
         <scene sceneID="rVC-l7-trr">
             <objects>
-                <viewController title="Trips History View Controller" id="CFK-z3-Smd" customClass="TripsHistoryViewController" sceneMemberID="viewController">
+                <viewController title="Trips History View Controller" id="CFK-z3-Smd" customClass="TripsListViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="f76-fR-5Zf"/>
                         <viewControllerLayoutGuide type="bottom" id="2Wz-DL-bIO"/>
@@ -25,7 +25,11 @@
                                         <items>
                                             <navigationItem id="7HE-8p-oV2">
                                                 <nil key="title"/>
-                                                <barButtonItem key="leftBarButtonItem" systemItem="organize" id="6qW-jx-ysz"/>
+                                                <barButtonItem key="leftBarButtonItem" systemItem="organize" id="6qW-jx-ysz">
+                                                    <connections>
+                                                        <segue destination="itd-fL-BYR" kind="presentation" identifier="segueToFilterList" modalTransitionStyle="flipHorizontal" id="Tlb-1b-kZN"/>
+                                                    </connections>
+                                                </barButtonItem>
                                                 <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="NlB-uH-zle">
                                                     <rect key="frame" x="54" y="7" width="526" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -50,7 +54,7 @@
                                 <rect key="frame" x="0.0" y="111" width="600" height="547"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="tripsHistoryListCell" rowHeight="55" id="swL-lW-yKd" customClass="TripsHistoryViewTableViewCell">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="tripsHistoryListCell" rowHeight="55" id="swL-lW-yKd" customClass="TripsListTableViewCell">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="swL-lW-yKd" id="Dce-pW-MQY">
@@ -73,7 +77,7 @@
                                                         <constraint firstAttribute="height" constant="21" id="lnp-kE-KBh"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="44 h. 36 m." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1sN-sx-Agr">
@@ -83,7 +87,7 @@
                                                         <constraint firstAttribute="height" constant="21" id="h2P-Yd-ggF"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23489 N. Broadway" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QMf-4B-hq4">
@@ -92,7 +96,7 @@
                                                         <constraint firstAttribute="height" constant="20.5" id="LFq-8t-bW2"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="4321 S. Roosevelt" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZPE-pj-teJ">
@@ -101,7 +105,7 @@
                                                         <constraint firstAttribute="height" constant="21" id="QPs-yV-Osl"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_forward" translatesAutoresizingMaskIntoConstraints="NO" id="HQT-VX-p2S">
@@ -160,16 +164,66 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="JTc-Ej-Cat" id="Jiy-m9-x10"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JuW-of-TLY" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <customObject id="nWT-i5-2RD" customClass="TripsHistoryViewTableViewDataSource"/>
+                <customObject id="nWT-i5-2RD" customClass="TripsListTableViewDataSource"/>
             </objects>
             <point key="canvasLocation" x="2269" y="565"/>
+        </scene>
+        <!--Tags-->
+        <scene sceneID="mFF-is-e3U">
+            <objects>
+                <viewController id="cee-b9-EQj" customClass="TripsFiltersListViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cV6-Te-i0d"/>
+                        <viewControllerLayoutGuide type="bottom" id="CQT-0l-AWT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JFz-UD-N66">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="V8n-Kf-1hX">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="filterListCell" id="IYK-bo-qyv">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IYK-bo-qyv" id="7E9-w3-VHo">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="V8n-Kf-1hX" firstAttribute="leading" secondItem="JFz-UD-N66" secondAttribute="leadingMargin" constant="-16" id="Lie-qU-YQb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="V8n-Kf-1hX" secondAttribute="trailing" constant="-16" id="NQs-NB-4Dm"/>
+                            <constraint firstItem="CQT-0l-AWT" firstAttribute="top" secondItem="V8n-Kf-1hX" secondAttribute="bottom" id="eAl-dK-c8R"/>
+                            <constraint firstItem="V8n-Kf-1hX" firstAttribute="top" secondItem="cV6-Te-i0d" secondAttribute="bottom" constant="-64" id="nRL-Ay-th5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tags" id="tOk-M4-gDR">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="pZU-DI-mOR">
+                            <connections>
+                                <action selector="doneButtonPressed:" destination="cee-b9-EQj" id="kBe-ZP-dZ1"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="xbT-XU-MXS"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uqb-RM-e5W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3436" y="1282"/>
         </scene>
         <!--A Past Trip: Detail / New-->
         <scene sceneID="8LE-3d-3Tc">
             <objects>
-                <viewController id="rep-dv-YB8" customClass="TripsHistoryDetailViewController" sceneMemberID="viewController">
+                <viewController id="rep-dv-YB8" customClass="TripDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aqU-jk-PZe"/>
                         <viewControllerLayoutGuide type="bottom" id="KhW-xZ-Uqi"/>
@@ -194,7 +248,7 @@
                                     <constraint firstAttribute="width" constant="20" id="ozw-pb-sRn"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mi: ..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ubW-NJ-CQH">
@@ -204,7 +258,7 @@
                                     <constraint firstAttribute="width" constant="78" id="uQu-Ts-2mH"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T: ..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="At5-rP-uVj">
@@ -214,7 +268,7 @@
                                     <constraint firstAttribute="width" constant="106" id="uf2-Vz-cDE"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="IMb-1r-zZJ">
@@ -240,7 +294,7 @@
                                     <constraint firstAttribute="height" constant="21" id="zs1-E6-I5i"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="starOutline30" translatesAutoresizingMaskIntoConstraints="NO" id="tmT-e3-kg8">
@@ -257,7 +311,7 @@
                                     <constraint firstAttribute="height" constant="21" id="goW-vR-WaA"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9zD-ge-W1n">
@@ -267,7 +321,7 @@
                                     <constraint firstAttribute="height" constant="21" id="lgj-Xd-dhI"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="starOutline30" translatesAutoresizingMaskIntoConstraints="NO" id="caP-Gu-40Q">
@@ -284,7 +338,7 @@
                                     <constraint firstAttribute="height" constant="21" id="UdE-t0-Pbs"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="4321 S. Roosevelt Blvd., Salt Lake City, UT" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xu6-Ta-Zgm">
@@ -303,7 +357,7 @@
                                     <constraint firstAttribute="width" constant="45" id="t3S-hB-ceJ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="4PM-bz-UwG">
@@ -388,7 +442,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GZZ-y4-kyp" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <customObject id="ttE-gy-1xK" customClass="TripsHistoryDetailViewTableViewDataSource"/>
+                <customObject id="ttE-gy-1xK" customClass="TripDetailTableViewDataSource"/>
             </objects>
             <point key="canvasLocation" x="2978" y="565"/>
         </scene>
@@ -568,6 +622,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="m5A-xd-kqN" id="qP7-ef-0ZC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EqP-dk-ScV" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <customObject id="sng-S6-r1D" customClass="PlacesViewTableViewDataSource"/>
@@ -676,6 +733,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wYc-BF-7IA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="546" y="565"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vLS-X4-SQm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="itd-fL-BYR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ic1-On-mcp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cee-b9-EQj" kind="relationship" relationship="rootViewController" id="s1D-Tn-Sff"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1T5-VC-5C3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2742" y="1282"/>
         </scene>
     </scenes>
     <resources>

@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		0F1316BC1B8F68FD00615EDB /* PlacesDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F1316BB1B8F68FD00615EDB /* PlacesDetailViewController.m */; };
 		0F1316BF1B8F6A3600615EDB /* PlacesViewTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F1316BE1B8F6A3600615EDB /* PlacesViewTableViewDataSource.m */; };
-		0FA244C41B95077B00DD8E2A /* TripsHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA244C31B95077B00DD8E2A /* TripsHistoryViewController.m */; };
-		0FA244C81B9507D200DD8E2A /* TripsHistoryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA244C71B9507D200DD8E2A /* TripsHistoryDetailViewController.m */; };
-		0FA244CB1B9507FF00DD8E2A /* TripsHistoryViewTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA244CA1B9507FF00DD8E2A /* TripsHistoryViewTableViewDataSource.m */; };
-		0FA244CE1B950C0C00DD8E2A /* TripsHistoryViewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA244CD1B950C0C00DD8E2A /* TripsHistoryViewTableViewCell.m */; };
+		0F9C483D1BA0F2B30076E722 /* TripsFiltersListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F9C483C1BA0F2B30076E722 /* TripsFiltersListViewController.m */; };
+		0FA244C41B95077B00DD8E2A /* TripsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA244C31B95077B00DD8E2A /* TripsListViewController.m */; };
+		0FA244C81B9507D200DD8E2A /* TripDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA244C71B9507D200DD8E2A /* TripDetailViewController.m */; };
+		0FA244CB1B9507FF00DD8E2A /* TripsListTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA244CA1B9507FF00DD8E2A /* TripsListTableViewDataSource.m */; };
+		0FA244CE1B950C0C00DD8E2A /* TripsListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA244CD1B950C0C00DD8E2A /* TripsListTableViewCell.m */; };
 		0FEF71781B9A959F00245FA0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEF71771B9A959F00245FA0 /* MapKit.framework */; };
-		0FEF717B1B9AB22E00245FA0 /* TripsHistoryDetailViewTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEF717A1B9AB22E00245FA0 /* TripsHistoryDetailViewTableViewDataSource.m */; };
+		0FEF717B1B9AB22E00245FA0 /* TripDetailTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEF717A1B9AB22E00245FA0 /* TripDetailTableViewDataSource.m */; };
 		0FFB0A391B8E6696002696E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FFB0A381B8E6696002696E9 /* main.m */; };
 		0FFB0A3C1B8E6696002696E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FFB0A3B1B8E6696002696E9 /* AppDelegate.m */; };
 		0FFB0A3F1B8E6696002696E9 /* PlacesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FFB0A3E1B8E6696002696E9 /* PlacesViewController.m */; };
@@ -39,17 +40,19 @@
 		0F1316BB1B8F68FD00615EDB /* PlacesDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlacesDetailViewController.m; sourceTree = "<group>"; };
 		0F1316BD1B8F6A3600615EDB /* PlacesViewTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlacesViewTableViewDataSource.h; sourceTree = "<group>"; };
 		0F1316BE1B8F6A3600615EDB /* PlacesViewTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlacesViewTableViewDataSource.m; sourceTree = "<group>"; };
-		0FA244C21B95077B00DD8E2A /* TripsHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TripsHistoryViewController.h; sourceTree = "<group>"; };
-		0FA244C31B95077B00DD8E2A /* TripsHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TripsHistoryViewController.m; sourceTree = "<group>"; };
-		0FA244C61B9507D200DD8E2A /* TripsHistoryDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TripsHistoryDetailViewController.h; sourceTree = "<group>"; };
-		0FA244C71B9507D200DD8E2A /* TripsHistoryDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TripsHistoryDetailViewController.m; sourceTree = "<group>"; };
-		0FA244C91B9507FF00DD8E2A /* TripsHistoryViewTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TripsHistoryViewTableViewDataSource.h; sourceTree = "<group>"; };
-		0FA244CA1B9507FF00DD8E2A /* TripsHistoryViewTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TripsHistoryViewTableViewDataSource.m; sourceTree = "<group>"; };
-		0FA244CC1B950C0C00DD8E2A /* TripsHistoryViewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TripsHistoryViewTableViewCell.h; sourceTree = "<group>"; };
-		0FA244CD1B950C0C00DD8E2A /* TripsHistoryViewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TripsHistoryViewTableViewCell.m; sourceTree = "<group>"; };
+		0F9C483B1BA0F2B30076E722 /* TripsFiltersListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TripsFiltersListViewController.h; sourceTree = "<group>"; };
+		0F9C483C1BA0F2B30076E722 /* TripsFiltersListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TripsFiltersListViewController.m; sourceTree = "<group>"; };
+		0FA244C21B95077B00DD8E2A /* TripsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TripsListViewController.h; sourceTree = "<group>"; };
+		0FA244C31B95077B00DD8E2A /* TripsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TripsListViewController.m; sourceTree = "<group>"; };
+		0FA244C61B9507D200DD8E2A /* TripDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TripDetailViewController.h; sourceTree = "<group>"; };
+		0FA244C71B9507D200DD8E2A /* TripDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TripDetailViewController.m; sourceTree = "<group>"; };
+		0FA244C91B9507FF00DD8E2A /* TripsListTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TripsListTableViewDataSource.h; sourceTree = "<group>"; };
+		0FA244CA1B9507FF00DD8E2A /* TripsListTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TripsListTableViewDataSource.m; sourceTree = "<group>"; };
+		0FA244CC1B950C0C00DD8E2A /* TripsListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TripsListTableViewCell.h; sourceTree = "<group>"; };
+		0FA244CD1B950C0C00DD8E2A /* TripsListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TripsListTableViewCell.m; sourceTree = "<group>"; };
 		0FEF71771B9A959F00245FA0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		0FEF71791B9AB22E00245FA0 /* TripsHistoryDetailViewTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TripsHistoryDetailViewTableViewDataSource.h; sourceTree = "<group>"; };
-		0FEF717A1B9AB22E00245FA0 /* TripsHistoryDetailViewTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TripsHistoryDetailViewTableViewDataSource.m; sourceTree = "<group>"; };
+		0FEF71791B9AB22E00245FA0 /* TripDetailTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TripDetailTableViewDataSource.h; sourceTree = "<group>"; };
+		0FEF717A1B9AB22E00245FA0 /* TripDetailTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TripDetailTableViewDataSource.m; sourceTree = "<group>"; };
 		0FFB0A331B8E6696002696E9 /* DriveTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DriveTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FFB0A371B8E6696002696E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FFB0A381B8E6696002696E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -97,19 +100,45 @@
 			name = Places;
 			sourceTree = "<group>";
 		};
+		0F9C483E1BA0F42F0076E722 /* Trips List View */ = {
+			isa = PBXGroup;
+			children = (
+				0FA244C21B95077B00DD8E2A /* TripsListViewController.h */,
+				0FA244C31B95077B00DD8E2A /* TripsListViewController.m */,
+				0FA244C91B9507FF00DD8E2A /* TripsListTableViewDataSource.h */,
+				0FA244CA1B9507FF00DD8E2A /* TripsListTableViewDataSource.m */,
+				0FA244CC1B950C0C00DD8E2A /* TripsListTableViewCell.h */,
+				0FA244CD1B950C0C00DD8E2A /* TripsListTableViewCell.m */,
+			);
+			name = "Trips List View";
+			sourceTree = "<group>";
+		};
+		0F9C483F1BA0F4460076E722 /* Trips Filters List View */ = {
+			isa = PBXGroup;
+			children = (
+				0F9C483B1BA0F2B30076E722 /* TripsFiltersListViewController.h */,
+				0F9C483C1BA0F2B30076E722 /* TripsFiltersListViewController.m */,
+			);
+			name = "Trips Filters List View";
+			sourceTree = "<group>";
+		};
+		0F9C48401BA0F45F0076E722 /* Trip Detail View */ = {
+			isa = PBXGroup;
+			children = (
+				0FA244C61B9507D200DD8E2A /* TripDetailViewController.h */,
+				0FA244C71B9507D200DD8E2A /* TripDetailViewController.m */,
+				0FEF71791B9AB22E00245FA0 /* TripDetailTableViewDataSource.h */,
+				0FEF717A1B9AB22E00245FA0 /* TripDetailTableViewDataSource.m */,
+			);
+			name = "Trip Detail View";
+			sourceTree = "<group>";
+		};
 		0FA244C51B95078700DD8E2A /* Trips History */ = {
 			isa = PBXGroup;
 			children = (
-				0FA244C21B95077B00DD8E2A /* TripsHistoryViewController.h */,
-				0FA244C31B95077B00DD8E2A /* TripsHistoryViewController.m */,
-				0FA244C91B9507FF00DD8E2A /* TripsHistoryViewTableViewDataSource.h */,
-				0FA244CA1B9507FF00DD8E2A /* TripsHistoryViewTableViewDataSource.m */,
-				0FA244CC1B950C0C00DD8E2A /* TripsHistoryViewTableViewCell.h */,
-				0FA244CD1B950C0C00DD8E2A /* TripsHistoryViewTableViewCell.m */,
-				0FA244C61B9507D200DD8E2A /* TripsHistoryDetailViewController.h */,
-				0FA244C71B9507D200DD8E2A /* TripsHistoryDetailViewController.m */,
-				0FEF71791B9AB22E00245FA0 /* TripsHistoryDetailViewTableViewDataSource.h */,
-				0FEF717A1B9AB22E00245FA0 /* TripsHistoryDetailViewTableViewDataSource.m */,
+				0F9C483E1BA0F42F0076E722 /* Trips List View */,
+				0F9C483F1BA0F4460076E722 /* Trips Filters List View */,
+				0F9C48401BA0F45F0076E722 /* Trip Detail View */,
 			);
 			name = "Trips History";
 			sourceTree = "<group>";
@@ -274,16 +303,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FA244CE1B950C0C00DD8E2A /* TripsHistoryViewTableViewCell.m in Sources */,
+				0FA244CE1B950C0C00DD8E2A /* TripsListTableViewCell.m in Sources */,
+				0F9C483D1BA0F2B30076E722 /* TripsFiltersListViewController.m in Sources */,
 				0FFB0A3F1B8E6696002696E9 /* PlacesViewController.m in Sources */,
 				0F1316BF1B8F6A3600615EDB /* PlacesViewTableViewDataSource.m in Sources */,
 				0F1316BC1B8F68FD00615EDB /* PlacesDetailViewController.m in Sources */,
-				0FEF717B1B9AB22E00245FA0 /* TripsHistoryDetailViewTableViewDataSource.m in Sources */,
+				0FEF717B1B9AB22E00245FA0 /* TripDetailTableViewDataSource.m in Sources */,
 				0FFB0A3C1B8E6696002696E9 /* AppDelegate.m in Sources */,
-				0FA244C41B95077B00DD8E2A /* TripsHistoryViewController.m in Sources */,
-				0FA244CB1B9507FF00DD8E2A /* TripsHistoryViewTableViewDataSource.m in Sources */,
+				0FA244C41B95077B00DD8E2A /* TripsListViewController.m in Sources */,
+				0FA244CB1B9507FF00DD8E2A /* TripsListTableViewDataSource.m in Sources */,
 				0FFB0A391B8E6696002696E9 /* main.m in Sources */,
-				0FA244C81B9507D200DD8E2A /* TripsHistoryDetailViewController.m in Sources */,
+				0FA244C81B9507D200DD8E2A /* TripDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

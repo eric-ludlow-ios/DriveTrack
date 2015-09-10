@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 @import UIKit;
 
-@interface TripsHistoryDetailViewTableViewDataSource : NSObject <UITableViewDataSource>
+@interface TripDetailTableViewDataSource : NSObject <UITableViewDataSource>
 
 @property (nonatomic)BOOL isNewTrip;
 

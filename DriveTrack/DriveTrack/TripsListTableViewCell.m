@@ -6,9 +6,9 @@
 //  Copyright (c) 2015 EricLudlowRadicalApplications. All rights reserved.
 //
 
-#import "TripsHistoryViewTableViewCell.h"
+#import "TripsListTableViewCell.h"
 
-@implementation TripsHistoryViewTableViewCell
+@implementation TripsListTableViewCell
 
 - (void)awakeFromNib {
     // Initialization code
