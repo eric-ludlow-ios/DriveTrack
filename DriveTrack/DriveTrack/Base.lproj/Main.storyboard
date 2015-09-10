@@ -217,7 +217,11 @@
                                 <action selector="doneButtonPressed:" destination="cee-b9-EQj" id="kBe-ZP-dZ1"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="xbT-XU-MXS"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="xbT-XU-MXS">
+                            <connections>
+                                <action selector="addNewTagPressed:" destination="cee-b9-EQj" id="fT1-H0-DdB"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uqb-RM-e5W" userLabel="First Responder" sceneMemberID="firstResponder"/>

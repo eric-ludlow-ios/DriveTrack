@@ -19,6 +19,45 @@
     // Do any additional setup after loading the view.
 }
 
+- (IBAction)addNewTagPressed:(id)sender {
+    
+    UIAlertController *addNewTagAlert = [UIAlertController alertControllerWithTitle:@"New Tag"
+                                                                                 message:@"Type the name of a new tag:"
+                                                                          preferredStyle:UIAlertControllerStyleAlert];
+    
+    [addNewTagAlert addTextFieldWithConfigurationHandler:^(UITextField *textField) {
+        
+        textField.placeholder = @"'sales trip' or 'errand'";
+    }];
+    
+    [addNewTagAlert addAction:[UIAlertAction actionWithTitle:@"Add"
+                                                            style:UIAlertActionStyleDefault
+                                                          handler:^(UIAlertAction *action) {
+                                                              
+                                                              //***insert this code, and check it, after implementing CoreData***
+                                                              
+//                                                              UITextField *textField = addNewTagAlert.textFields[0];
+//                                                              
+//                                                              Tag *tag = [[TagController sharedInstance] createTag];
+//                                                              tag.nameOfTag = textField.text;
+//                                                              [[ListAndItemController sharedInstance] save];
+//                                                              
+//                                                              dispatch_async(dispatch_get_main_queue(), ^{
+//                                                                  
+//                                                                  [self.tagsTableView reloadData];
+//                                                              });
+                                                          }]];
+    
+    [addNewTagAlert addAction:[UIAlertAction actionWithTitle:@"Cancel"
+                                                            style:UIAlertActionStyleDestructive
+                                                          handler:nil]];
+    
+    [self.navigationController presentViewController:addNewTagAlert
+                                            animated:YES
+                                          completion:nil];
+}
+
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     //different inital state and property setting for filter selection vs. trip detail tag selection
