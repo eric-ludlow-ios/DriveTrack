@@ -1,23 +1,23 @@
 //
-//  TripsFiltersListTableViewDataSource.m
+//  TagsListTableViewDataSource.m
 //  DriveTrack
 //
 //  Created by Rutan on 9/10/15.
 //  Copyright (c) 2015 EricLudlowRadicalApplications. All rights reserved.
 //
 
-#import "TripsFiltersListTableViewDataSource.h"
+#import "TagsListTableViewDataSource.h"
 
-@implementation TripsFiltersListTableViewDataSource
+@implementation TagsListTableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return (1 + [self fakeDataFiltersArray].count);
+    return (1 + [self fakeDataTagsArray].count);
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"filterListCell"];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"tagListCell"];
     
     if (indexPath.row == 0) {
         
@@ -26,15 +26,15 @@
         
     } else {
         
-        cell.textLabel.text = [self fakeDataFiltersArray][indexPath.row - 1];
+        cell.textLabel.text = [self fakeDataTagsArray][indexPath.row - 1];
     }
     
     return cell;
 }
 
-- (NSArray *)fakeDataFiltersArray {
+- (NSArray *)fakeDataTagsArray {
     
-    return @[@"work", @"vacation", @"errands"];
+    return @[@"errands", @"sales trip", @"vacation", @"work"];
 }
 
 @end

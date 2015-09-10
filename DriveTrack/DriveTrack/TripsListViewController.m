@@ -8,9 +8,9 @@
 
 #import "TripsListViewController.h"
 #import "TripDetailViewController.h"
-#import "TripsFiltersListViewController.h"
+#import "TagsListViewController.h"
 
-@interface TripsListViewController () <TripsFiltersListViewControllerDelegate>
+@interface TripsListViewController () <TagsListViewControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
@@ -39,13 +39,13 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
-    if ([segue.identifier isEqualToString:@"segueToFilterList"]) {
+    if ([segue.identifier isEqualToString:@"segueTripsToTagsList"]) {
         
         UINavigationController *navCon = segue.destinationViewController;
         
-        TripsFiltersListViewController *destinationTripsFiltersViewCon = (TripsFiltersListViewController *)navCon.topViewController;
+        TagsListViewController *destinationTagsViewCon = (TagsListViewController *)navCon.topViewController;
         
-        destinationTripsFiltersViewCon.delegate = self;
+        destinationTagsViewCon.delegate = self;
         
     } else {
         
@@ -64,9 +64,9 @@
     }
 }
 
-#pragma mark - Trips Filters List ViewController Delegate method
+#pragma mark - Tags List ViewController Delegate method
 
-- (void)tripsFiltersViewControllerDidFinish:(TripsFiltersListViewController *)tripsFiltersViewController {
+- (void)tagsViewControllerDidFinish:(TagsListViewController *)tagsViewController {
     
     [self dismissViewControllerAnimated:YES completion:nil];
 }

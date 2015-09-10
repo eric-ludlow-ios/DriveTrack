@@ -1,18 +1,18 @@
 //
-//  TripsHistoryTagsFilterListViewController.m
+//  TagsListViewController.m
 //  DriveTrack
 //
 //  Created by Rutan on 9/9/15.
 //  Copyright (c) 2015 EricLudlowRadicalApplications. All rights reserved.
 //
 
-#import "TripsFiltersListViewController.h"
+#import "TagsListViewController.h"
 
-@interface TripsFiltersListViewController () <UITableViewDelegate>
+@interface TagsListViewController () <UITableViewDelegate>
 
 @end
 
-@implementation TripsFiltersListViewController
+@implementation TagsListViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -21,11 +21,14 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
+    //different inital state and property setting for filter selection vs. trip detail tag selection
+    
+    
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     if ([tableView cellForRowAtIndexPath:indexPath].accessoryType) {
         [tableView cellForRowAtIndexPath:indexPath].accessoryType = UITableViewCellAccessoryNone;
-        //set the property for actual filtering to none
+        //set the property for actual filtering
         
     } else {
         [tableView cellForRowAtIndexPath:indexPath].accessoryType = UITableViewCellAccessoryCheckmark;
@@ -36,7 +39,7 @@
 
 - (IBAction)doneButtonPressed:(id)sender {
     
-    [self.delegate tripsFiltersViewControllerDidFinish:self];
+    [self.delegate tagsViewControllerDidFinish:self];
 }
 
 

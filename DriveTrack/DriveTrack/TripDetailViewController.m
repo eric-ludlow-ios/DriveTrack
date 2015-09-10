@@ -7,10 +7,11 @@
 //
 
 #import "TripDetailViewController.h"
-#import "TripDetailTableViewDataSource.h"
+#import "TripDetailTagsTableViewDataSource.h"
+#import "TagsListViewController.h"
 //@import MapKit;
 
-@interface TripDetailViewController ()
+@interface TripDetailViewController () <TagsListViewControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *tripDetailDateTextField;
 @property (weak, nonatomic) IBOutlet UILabel *tripDetailMilesLabel;
@@ -32,7 +33,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    TripDetailTableViewDataSource *dataSource = self.tripDetailTagsTableView.dataSource;
+    TripDetailTagsTableViewDataSource *dataSource = self.tripDetailTagsTableView.dataSource;
     
     if (self.isNewTrip) {
         
@@ -63,14 +64,26 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
+
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    
+    if ([segue.identifier isEqualToString:@"segueTripDetailToTags"]) {
+        
+        UINavigationController *navCon = segue.destinationViewController;
+        TagsListViewController *destinationTagsViewCon = (TagsListViewController *)navCon.topViewController;
+        
+        destinationTagsViewCon.delegate = self;
+    }
 }
-*/
+
+#pragma mark - TagsListVC Delegate method
+
+- (void)tagsViewControllerDidFinish:(TagsListViewController *)tagsViewController {
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 
 @end

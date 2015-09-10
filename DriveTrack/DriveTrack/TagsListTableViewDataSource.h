@@ -1,5 +1,5 @@
 //
-//  TripsFiltersListTableViewDataSource.h
+//  TagsListTableViewDataSource.h
 //  DriveTrack
 //
 //  Created by Rutan on 9/10/15.
@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 @import UIKit;
 
-@interface TripsFiltersListTableViewDataSource : NSObject <UITableViewDataSource>
+@interface TagsListTableViewDataSource : NSObject <UITableViewDataSource>
 
 @end

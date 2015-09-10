@@ -27,7 +27,7 @@
                                                 <nil key="title"/>
                                                 <barButtonItem key="leftBarButtonItem" systemItem="organize" id="6qW-jx-ysz">
                                                     <connections>
-                                                        <segue destination="itd-fL-BYR" kind="presentation" identifier="segueToFilterList" modalTransitionStyle="flipHorizontal" id="Tlb-1b-kZN"/>
+                                                        <segue destination="itd-fL-BYR" kind="presentation" identifier="segueTripsToTagsList" modalTransitionStyle="flipHorizontal" id="Tlb-1b-kZN"/>
                                                     </connections>
                                                 </barButtonItem>
                                                 <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="NlB-uH-zle">
@@ -171,12 +171,12 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JuW-of-TLY" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <customObject id="nWT-i5-2RD" customClass="TripsListTableViewDataSource"/>
             </objects>
-            <point key="canvasLocation" x="2269" y="565"/>
+            <point key="canvasLocation" x="1754" y="985"/>
         </scene>
         <!--Tags-->
         <scene sceneID="mFF-is-e3U">
             <objects>
-                <viewController id="cee-b9-EQj" customClass="TripsFiltersListViewController" sceneMemberID="viewController">
+                <viewController id="cee-b9-EQj" customClass="TagsListViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cV6-Te-i0d"/>
                         <viewControllerLayoutGuide type="bottom" id="CQT-0l-AWT"/>
@@ -189,7 +189,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="filterListCell" id="IYK-bo-qyv">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="tagListCell" id="IYK-bo-qyv">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IYK-bo-qyv" id="7E9-w3-VHo">
@@ -221,9 +221,9 @@
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uqb-RM-e5W" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <customObject id="G3u-vl-F5B" customClass="TripsFiltersListTableViewDataSource"/>
+                <customObject id="G3u-vl-F5B" customClass="TagsListTableViewDataSource"/>
             </objects>
-            <point key="canvasLocation" x="3436" y="1282"/>
+            <point key="canvasLocation" x="2850" y="1733"/>
         </scene>
         <!--A Past Trip: Detail / New-->
         <scene sceneID="8LE-3d-3Tc">
@@ -390,6 +390,9 @@
                                 <state key="normal" title="+ / -">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="itd-fL-BYR" kind="presentation" identifier="segueTripDetailToTags" id="QKy-Cg-94d"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -447,9 +450,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GZZ-y4-kyp" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <customObject id="ttE-gy-1xK" customClass="TripDetailTableViewDataSource"/>
+                <customObject id="ttE-gy-1xK" customClass="TripDetailTagsTableViewDataSource"/>
             </objects>
-            <point key="canvasLocation" x="2978" y="565"/>
+            <point key="canvasLocation" x="2490" y="985"/>
         </scene>
         <!--Places Detail View Controller-->
         <scene sceneID="ptL-8y-CdZ">
@@ -571,7 +574,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qYP-td-CCs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1957" y="2002"/>
+            <point key="canvasLocation" x="3861" y="241"/>
         </scene>
         <!--Places View Controller-->
         <scene sceneID="XQa-E4-Z5O">
@@ -638,7 +641,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EqP-dk-ScV" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <customObject id="sng-S6-r1D" customClass="PlacesViewTableViewDataSource"/>
             </objects>
-            <point key="canvasLocation" x="1957" y="1282"/>
+            <point key="canvasLocation" x="3169" y="241"/>
         </scene>
         <!--Places-->
         <scene sceneID="vkf-QE-zSG">
@@ -655,7 +658,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0HG-m4-Vhr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1256" y="1282"/>
+            <point key="canvasLocation" x="2472" y="241"/>
         </scene>
         <!--Trips History-->
         <scene sceneID="GoL-cp-uRI">
@@ -672,7 +675,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eu3-jr-BEz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1256" y="565"/>
+            <point key="canvasLocation" x="1754" y="241"/>
         </scene>
         <!--Trip View Controller-->
         <scene sceneID="ufC-wZ-h7g">
@@ -697,7 +700,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1957" y="-118"/>
+            <point key="canvasLocation" x="984" y="985"/>
         </scene>
         <!--Trip-->
         <scene sceneID="qFa-VW-Um4">
@@ -716,7 +719,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GVJ-jH-8kI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1256" y="-118"/>
+            <point key="canvasLocation" x="984" y="241"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="NxG-aa-EFN">
@@ -741,7 +744,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wYc-BF-7IA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="546" y="565"/>
+            <point key="canvasLocation" x="1754" y="-507"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vLS-X4-SQm">
@@ -759,7 +762,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1T5-VC-5C3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2742" y="1282"/>
+            <point key="canvasLocation" x="2134" y="1733"/>
         </scene>
     </scenes>
     <resources>
@@ -774,6 +777,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="ZhQ-Lb-m1R"/>
+        <segue reference="QKy-Cg-94d"/>
         <segue reference="stY-1X-WKQ"/>
     </inferredMetricsTieBreakers>
 </document>
