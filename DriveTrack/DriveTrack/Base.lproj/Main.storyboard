@@ -199,7 +199,7 @@
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="G3u-vl-F5B" id="9U1-Ci-7wR"/>
-                                    <outlet property="delegate" destination="cee-b9-EQj" id="E3l-aw-QWg"/>
+                                    <outlet property="delegate" destination="cee-b9-EQj" id="kmr-nW-DmA"/>
                                 </connections>
                             </tableView>
                         </subviews>

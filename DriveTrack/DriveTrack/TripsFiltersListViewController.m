@@ -22,6 +22,16 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    if ([tableView cellForRowAtIndexPath:indexPath].accessoryType) {
+        [tableView cellForRowAtIndexPath:indexPath].accessoryType = UITableViewCellAccessoryNone;
+        //set the property for actual filtering to none
+        
+    } else {
+        [tableView cellForRowAtIndexPath:indexPath].accessoryType = UITableViewCellAccessoryCheckmark;
+        //set the property for actual filtering
+        
+    }
 }
 
 - (IBAction)doneButtonPressed:(id)sender {

@@ -12,14 +12,22 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return [self fakeDataFiltersArray].count;
+    return (1 + [self fakeDataFiltersArray].count);
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"filterListCell"];
     
-    cell.textLabel.text = [self fakeDataFiltersArray][indexPath.row];
+    if (indexPath.row == 0) {
+        
+        cell.textLabel.text = @"ALL";
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+        
+    } else {
+        
+        cell.textLabel.text = [self fakeDataFiltersArray][indexPath.row - 1];
+    }
     
     return cell;
 }
