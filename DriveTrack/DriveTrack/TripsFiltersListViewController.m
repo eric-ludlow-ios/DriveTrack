@@ -8,7 +8,7 @@
 
 #import "TripsFiltersListViewController.h"
 
-@interface TripsFiltersListViewController ()
+@interface TripsFiltersListViewController () <UITableViewDelegate>
 
 @end
 
@@ -19,6 +19,10 @@
     // Do any additional setup after loading the view.
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
 
 - (IBAction)doneButtonPressed:(id)sender {
     

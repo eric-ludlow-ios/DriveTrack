@@ -197,6 +197,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="G3u-vl-F5B" id="9U1-Ci-7wR"/>
+                                    <outlet property="delegate" destination="cee-b9-EQj" id="E3l-aw-QWg"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -217,6 +221,7 @@
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uqb-RM-e5W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="G3u-vl-F5B" customClass="TripsFiltersListTableViewDataSource"/>
             </objects>
             <point key="canvasLocation" x="3436" y="1282"/>
         </scene>
